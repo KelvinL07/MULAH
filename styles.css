@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -13,21 +12,20 @@ body {
     text-align: center;
     width: 90%;
     max-width: 640px;
-    height: 1136px; /* Fixed height */
+    height: 1136px; 
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    position: relative; /* To position the footer at the bottom */
+    justify-content: center; 
+    align-items: center; 
 }
 
 h1 {
     color: #ff6600;
-    margin-bottom: 20px; /* Add some margin to separate elements */
+    margin-bottom: 20px; 
 }
 
 .subheading {
@@ -43,7 +41,7 @@ h1 {
 .form-group {
     margin-bottom: 20px;
     text-align: left;
-    width: 100%; /* Ensure form groups take full width */
+    width: 100%; 
 }
 
 label {
@@ -88,7 +86,7 @@ small {
 
 .no-email-label {
     margin-left: 5px;
-    font-weight: normal; /* Ensure label is not bold */
+    font-weight: normal; 
 }
 
 button {
@@ -113,7 +111,7 @@ footer {
     color: #999;
     margin-top: 20px;
     position: absolute;
-    bottom: 20px; /* Position the footer at the bottom */
+    bottom: 20px; 
 }
 
 footer a {
@@ -144,7 +142,7 @@ footer a:hover {
     font-size: 1em;
     color: #555;
     outline: none;
-    width: 35%; /* Adjust width to fit */
+    width: 35%;
 }
 
 #phone {
@@ -154,14 +152,14 @@ footer a:hover {
     font-size: 1em;
     color: #555;
     outline: none;
-    width: 55%; /* Adjust width to fit */
+    width: 55%; 
 }
 
 .check-icon {
     color: #999;
     font-size: 1em;
     transition: color 0.3s ease;
-    margin-left: 5px; /* Add some space between the input and the icon */
+    margin-left: 5px; 
 }
 
 .check-icon.valid {
