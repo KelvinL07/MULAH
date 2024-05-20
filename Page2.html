@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, initial-scale=1.0">
+    <title>MULAH - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MULAH</h1>
+        <p class="subheading">Registration</p>
+        <p class="instructions">Please fill up your details.</p>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name" oninput="validateField('name', 'name-error')">
+                <small id="name-error">*Please insert a name.</small>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <div class="birthday-inputs">
+                    <input type="text" id="day" placeholder="DD" oninput="validateField('day', 'birthday-error')">
+                    <input type="text" id="month" placeholder="MM" oninput="validateField('month', 'birthday-error')">
+                    <input type="text" id="year" placeholder="YYYY" oninput="validateField('year', 'birthday-error')">
+                </div>
+                <small id="birthday-error">*Please insert your birthday.</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email Address" oninput="validateField('email', 'email-error')">
+                <small id="email-error">*Please insert a valid email address.</small>
+                <div class="no-email-container">
+                    <input for="no-email-checkbox" type="checkbox" id="no-email" onclick="toggleEmail()">
+                    <label for="no-email" class="no-email-label">No email address</label>
+                </div>
+            </div>
+            <button type="button" onclick="register()">Continue</button>
+        </form>
+    </div>
+    <footer>Powered by <a href="#">MulahRewards.com</a></footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

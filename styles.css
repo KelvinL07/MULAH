@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 640px;
+    height: 1136px; /* Fixed height */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative; /* To position the footer at the bottom */
+}
+
+h1 {
+    color: #ff6600;
+    margin-bottom: 20px; /* Add some margin to separate elements */
+}
+
+.subheading {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.instructions {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%; /* Ensure form groups take full width */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.birthday-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.birthday-inputs input {
+    flex: 1;
+}
+
+small {
+    color: red;
+    display: block;
+}
+
+.no-email-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#no-email {
+    width: 13px;
+    height: 13px;
+}
+
+.no-email-label {
+    margin-left: 5px;
+    font-weight: normal; /* Ensure label is not bold */
+}
+
+button {
+    margin: 20px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e55b00;
+}
+
+footer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px; /* Position the footer at the bottom */
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+#country-code {
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: #555;
+    outline: none;
+    width: 35%; /* Adjust width to fit */
+}
+
+#phone {
+    border: none;
+    flex: 1;
+    padding: 0 10px;
+    font-size: 1em;
+    color: #555;
+    outline: none;
+    width: 55%; /* Adjust width to fit */
+}
+
+.check-icon {
+    color: #999;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    margin-left: 5px; /* Add some space between the input and the icon */
+}
+
+.check-icon.valid {
+    color: green;
+}

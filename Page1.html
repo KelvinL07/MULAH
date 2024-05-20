@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, initial-scale=1.0">
+    <title>MULAH - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MULAH</h1>
+        <p>Hello, Welcome!</p>
+        <p>Check Your Loyalty Points & Rewards</p>
+        <div class="phone-input">
+            <select id="country-code">
+                <option value="+60">+60</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <option value="+61">+61</option>
+                <option value="+91">+91</option>
+                <option value="+81">+81</option>
+                <option value="+86">+86</option>
+                <option value="+49">+49</option>
+                <option value="+33">+33</option>
+                <option value="+39">+39</option>
+                <option value="+34">+34</option>
+                <option value="+7">+7</option>
+                <option value="+82">+82</option>
+                <option value="+55">+55</option>
+                <option value="+27">+27</option>
+                <option value="+65">+65</option>
+                <option value="+66">+66</option>
+                <option value="+62">+62</option>
+                <!-- Add more country codes here if needed -->
+            </select>
+            <input type="text" id="phone" placeholder="Enter your mobile number" oninput="validatePhoneNumber()">
+            <span class="check-icon" id="check-icon">  </span>
+        </div>
+        <button onclick="checkLoyaltyPoints()">Check Loyalty Points</button>
+    </div>
+    <footer>Powered by MulahRewards.com</footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
