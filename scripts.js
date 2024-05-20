@@ -2,8 +2,7 @@ function validatePhoneNumber() {
     const phone = document.getElementById('phone').value;
     const checkIcon = document.getElementById('check-icon');
     
-    // Simple phone number validation (you can enhance this as needed)
-    if (phone === "173527250") {  // Only the part without the country code
+    if (phone === "173527250") {  
         checkIcon.classList.add('valid');
     } else {
         checkIcon.classList.remove('valid');
@@ -43,8 +42,7 @@ function validatePhoneNumber() {
     const phone = document.getElementById('phone').value;
     const checkIcon = document.getElementById('check-icon');
     
-    // Simple phone number validation (you can enhance this as needed)
-    if (phone === "173527250") {  // Only the part without the country code
+    if (phone === "173527250") { 
         checkIcon.classList.add('valid');
         id="check-icon"
     } else {
